@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="FR">
+
+<head>
+    <title>RAID 5 Petch</title>
+
+    <!--fichier css-->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Animate.css CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <!--Methode d utilisation-->
+    <dl class="row">
+        <dt class="col-sm-3 animate__animated animate__slideInLeft"">Utilisation</dt>
+  <dd class=" col-sm-9 animate__animated animate__slideInRight"">Cliquer sur le bouton RAID 5 pour 10 ligne/ Cliquer sur button + pour ajouter une ligne / et - pour enlever une ligne</dd>
+
+        <dt class="col-sm-3 animate__animated animate__slideInLeft">Participant</dt>
+        <dd class="col-sm-9 animate__animated animate__slideInRight">
+            <p class="animate__animated animate__slideInRight">Mike BITA BENI</p>
+        </dd>
+    </dl>
+
+
+    <button type="button" class="btn btn-primary" onclick=RAID5(10)>RAID 5</button>
+    <button type="button" class="btn btn-primary" onclick=PLUS()>+</button>
+    <button type="button" class="btn btn-primary" onclick=MINUS()>-</button>
+    <table class="table table-bordered animate__animated animate__slideInUp">
+        <thead>
+            <tr>
+                <th scope="col">DISK 0</th>
+                <th scope="col">DISK 1</th>
+                <th scope="col">DISK 2</th>
+                <th scope="col">DISK 3</th>
+                <th scope="col">DISK 4</th>
+            </tr>
+        </thead>
+        <tbody id="tableau_raid5">
+            <tr>
+                <td scope="row">12</td>
+                <td>Mark</td>
+                <td>Guard</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <td scope="row">2</td>
+                <td>Jacob</td>
+                <td>Mark</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <td scope="row">3</td>
+                <td>Larry</td>
+                <td>Mark</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+
+<footer>
+    <p class="animate__animated animate__slideInUp">
+        Créer par <i class="fa fa-heart"></i>
+        <a target="_blank" href="https://github.com/mikebita23/Perch-Raid-5-Recrutement-D-veloppeur-Full-Stack/tree/Xboutons">Mr Mike.B</a>
+        - Pour toutes autres informations veuillez nous contacter sur ce mail: mikesbita@gmail.com
+    </p>
+</footer>
+<!--pour inclure jquery afin du utiliser certain syntaxe jquery-->
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+
+<!--fichier javascript-->
+<script type="text/javascript" src="./js/main.js"></script>
+
+</html>
